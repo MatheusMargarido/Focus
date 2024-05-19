@@ -20,11 +20,11 @@ material de estudo acessível a todos os estudantes, independentemente de sua si
 
 ## Integrantes do Grupo
 
-Victor Sangiorge
-Gabriel Henrique Silva e Ferreira 
-Matheus Henrique de Souza 
-Arthur Berto Ferreira Rosa 
-Lucas Mateus Rosa de Aquino 
+1. Victor Sangiorge
+2. Gabriel Henrique Silva e Ferreira 
+3. Matheus Henrique de Souza 
+4. Arthur Berto Ferreira Rosa 
+5. Lucas Mateus Rosa de Aquino 
 
 
 ## Licença
