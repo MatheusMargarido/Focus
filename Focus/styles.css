@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #434b99;
+}
+
+header {
+    background-color: #161a50;
+    padding: 0.5em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+h1 {
+    margin: 0;
+    color: #e4980c;
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2em;
+}
+
+.disciplinas {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+section {
+    background-color: #fff;
+    padding: 1em;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    border: solid 3px#161a50;
+}
+
+.descricao {
+    margin-bottom: 1em;
+}
+
+section h2 {
+    text-align: center;
+    color: #161a50;
+    border-bottom: 2px solid #161a50;
+    padding-bottom: 0.5em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 0.5em 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
