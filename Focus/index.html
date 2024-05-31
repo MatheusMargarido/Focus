@@ -6,6 +6,7 @@
     <title>Focus - Home</title>
     <link rel="shortcut icon" href="assets/_a9a8ba86-ca8a-4566-80cf-095a90bfee21-removebg-preview.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body>
     <header>
@@ -13,7 +14,8 @@
             <img src="assets/_a9a8ba86-ca8a-4566-80cf-095a90bfee21-removebg-preview.png" alt="Logo FOCUS" class="logo">
         </div>
         <nav>
-            <ul>
+            <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+            <ul class="nav-list">
                 <li><a href="#matematica">Matemática</a></li>
                 <li><a href="#ciencias-natureza">Ciências da Natureza</a></li>
                 <li><a href="#ciencias-humanas">Ciências Humanas</a></li>
@@ -21,6 +23,7 @@
                 <li><a href="#redacao">Redação</a></li>
             </ul>
         </nav>
+        <div id="google-login"></div>
     </header>
     
     <main>
@@ -31,16 +34,16 @@
                     <p>No ENEM, Matemática é abordada com foco em resolução de problemas práticos, lógica, interpretação de gráficos e tabelas, além de conceitos básicos de álgebra, geometria e estatística.</p>
                 </div>
                 <ul>
-                    <li><a href="#">Aula de Álgebra</a></li>
-                    <li><a href="#">Geometria Plana</a></li>
-                    <li><a href="#">Estatística Básica</a></li>
-                    <li><a href="#">Trigonometria</a></li>
-                    <li><a href="#">Geometria Espacial</a></li>
-                    <li><a href="#">Números Complexos</a></li>
-                    <li><a href="#">Probabilidade</a></li>
-                    <li><a href="#">Funções</a></li>
-                    <li><a href="#">Logaritmos</a></li>
-                    <li><a href="#">Progressões</a></li>
+                    <li><input type="checkbox" id="algebra"><label for="algebra"> Aula de Álgebra</label></li>
+                    <li><input type="checkbox" id="geometria-plana"><label for="geometria-plana"> <a href="http://">Geometria Plana</a></label></li> 
+                    <li><input type="checkbox" id="estatistica-basica"><label for="estatistica-basica"> Estatística Básica</label></li>
+                    <li><input type="checkbox" id="trigonometria"><label for="trigonometria"> Trigonometria</label></li>
+                    <li><input type="checkbox" id="geometria-espacial"><label for="geometria-espacial"> Geometria Espacial</label></li>
+                    <li><input type="checkbox" id="numeros-complexos"><label for="numeros-complexos"> Números Complexos</label></li>
+                    <li><input type="checkbox" id="probabilidade"><label for="probabilidade"> Probabilidade</label></li>
+                    <li><input type="checkbox" id="funcoes"><label for="funcoes"> Funções</label></li>
+                    <li><input type="checkbox" id="logaritmos"><label for="logaritmos"> Logaritmos</label></li>
+                    <li><input type="checkbox" id="progressoes"><label for="progressoes"> Progressões</label></li>
                 </ul>
             </section>
             
@@ -50,16 +53,16 @@
                     <p>Essa área avalia conhecimentos de Biologia, Física e Química, com foco em fenômenos naturais, experimentos científicos, e a aplicação prática dos conceitos no cotidiano.</p>
                 </div>
                 <ul>
-                    <li><a href="#">Biologia Celular</a></li>
-                    <li><a href="#">Física Mecânica</a></li>
-                    <li><a href="#">Química Orgânica</a></li>
-                    <li><a href="#">Ecologia</a></li>
-                    <li><a href="#">Termodinâmica</a></li>
-                    <li><a href="#">Eletromagnetismo</a></li>
-                    <li><a href="#">Genética</a></li>
-                    <li><a href="#">Química Inorgânica</a></li>
-                    <li><a href="#">Astronomia</a></li>
-                    <li><a href="#">Fisiologia Humana</a></li>
+                    <li><input type="checkbox" id="biologia-celular"><label for="biologia-celular"> Biologia Celular</label></li>
+                    <li><input type="checkbox" id="fisica-mecanica"><label for="fisica-mecanica"> Física Mecânica</label></li>
+                    <li><input type="checkbox" id="quimica-organica"><label for="quimica-organica"> Química Orgânica</label></li>
+                    <li><input type="checkbox" id="ecologia"><label for="ecologia"> Ecologia</label></li>
+                    <li><input type="checkbox" id="termodinamica"><label for="termodinamica"> Termodinâmica</label></li>
+                    <li><input type="checkbox" id="eletromagnetismo"><label for="eletromagnetismo"> Eletromagnetismo</label></li>
+                    <li><input type="checkbox" id="genetica"><label for="genetica"> Genética</label></li>
+                    <li><input type="checkbox" id="quimica-inorganica"><label for="quimica-inorganica"> Química Inorgânica</label></li>
+                    <li><input type="checkbox" id="astronomia"><label for="astronomia"> Astronomia</label></li>
+                    <li><input type="checkbox" id="fisiologia-humana"><label for="fisiologia-humana"> Fisiologia Humana</label></li>
                 </ul>
             </section>
             
@@ -69,16 +72,16 @@
                     <p>Os temas em Ciências Humanas incluem História, Geografia, Sociologia e Filosofia, abordando eventos históricos, relações geográficas, sociais e políticas, além de conceitos filosóficos.</p>
                 </div>
                 <ul>
-                    <li><a href="#">História do Brasil</a></li>
-                    <li><a href="#">Geografia Física</a></li>
-                    <li><a href="#">Sociologia Contemporânea</a></li>
-                    <li><a href="#">Filosofia Moderna</a></li>
-                    <li><a href="#">Geografia Humana</a></li>
-                    <li><a href="#">História Geral</a></li>
-                    <li><a href="#">Política Internacional</a></li>
-                    <li><a href="#">Antropologia</a></li>
-                    <li><a href="#">Demografia</a></li>
-                    <li><a href="#">Movimentos Sociais</a></li>
+                    <li><input type="checkbox" id="historia-brasil"><label for="historia-brasil"> História do Brasil</label></li>
+                    <li><input type="checkbox" id="geografia-fisica"><label for="geografia-fisica"> Geografia Física</label></li>
+                    <li><input type="checkbox" id="sociologia-contemporanea"><label for="sociologia-contemporanea"> Sociologia Contemporânea</label></li>
+                    <li><input type="checkbox" id="filosofia-moderna"><label for="filosofia-moderna"> Filosofia Moderna</label></li>
+                    <li><input type="checkbox" id="geografia-humana"><label for="geografia-humana"> Geografia Humana</label></li>
+                    <li><input type="checkbox" id="historia-geral"><label for="historia-geral"> História Geral</label></li>
+                    <li><input type="checkbox" id="politica-internacional"><label for="politica-internacional"> Política Internacional</label></li>
+                    <li><input type="checkbox" id="antropologia"><label for="antropologia"> Antropologia</label></li>
+                    <li><input type="checkbox" id="demografia"><label for="demografia"> Demografia</label></li>
+                    <li><input type="checkbox" id="movimentos-sociais"><label for="movimentos-sociais"> Movimentos Sociais</label></li>
                 </ul>
             </section>
             
@@ -88,16 +91,16 @@
                     <p>Em Linguagens, são avaliados conhecimentos em interpretação de textos, gramática, literatura, e também artes e educação física, focando na capacidade de comunicação e expressão.</p>
                 </div>
                 <ul>
-                    <li><a href="#">Interpretação de Textos</a></li>
-                    <li><a href="#">Gramática</a></li>
-                    <li><a href="#">Literatura Brasileira</a></li>
-                    <li><a href="#">Literatura Portuguesa</a></li>
-                    <li><a href="#">Redação Oficial</a></li>
-                    <li><a href="#">Semântica</a></li>
-                    <li><a href="#">Análise Sintática</a></li>
-                    <li><a href="#">Figuras de Linguagem</a></li>
-                    <li><a href="#">Morfologia</a></li>
-                    <li><a href="#">Comunicação e Mídia</a></li>
+                    <li><input type="checkbox" id="interpretacao-textos"><label for="interpretacao-textos"> Interpretação de Textos</label></li>
+                    <li><input type="checkbox" id="gramatica"><label for="gramatica"> Gramática</label></li>
+                    <li><input type="checkbox" id="literatura-brasileira"><label for="literatura-brasileira"> Literatura Brasileira</label></li>
+                    <li><input type="checkbox" id="literatura-portuguesa"><label for="literatura-portuguesa"> Literatura Portuguesa</label></li>
+                    <li><input type="checkbox" id="redacao-oficial"><label for="redacao-oficial"> Redação Oficial</label></li>
+                    <li><input type="checkbox" id="semantica"><label for="semantica"> Semântica</label></li>
+                    <li><input type="checkbox" id="analise-sintatica"><label for="analise-sintatica"> Análise Sintática</label></li>
+                    <li><input type="checkbox" id="figuras-linguagem"><label for="figuras-linguagem"> Figuras de Linguagem</label></li>
+                    <li><input type="checkbox" id="morfologia"><label for="morfologia"> Morfologia</label></li>
+                    <li><input type="checkbox" id="comunicacao-midia"><label for="comunicacao-midia"> Comunicação e Mídia</label></li>
                 </ul>
             </section>
             
@@ -107,16 +110,16 @@
                     <p>A Redação do ENEM avalia a capacidade de organização das ideias, argumentação, coesão, coerência e domínio da norma culta da língua portuguesa, além de abordar temas sociais relevantes.</p>
                 </div>
                 <ul>
-                    <li><a href="#">Dicas de Redação</a></li>
-                    <li><a href="#">Temas Frequentes</a></li>
-                    <li><a href="#">Estrutura da Redação</a></li>
-                    <li><a href="#">Argumentação</a></li>
-                    <li><a href="#">Coesão e Coerência</a></li>
-                    <li><a href="#">Normas da ABNT</a></li>
-                    <li><a href="#">Erros Comuns</a></li>
-                    <li><a href="#">Planejamento do Texto</a></li>
-                    <li><a href="#">Introdução e Conclusão</a></li>
-                    <li><a href="#">Revisão e Edição</a></li>
+                    <li><input type="checkbox" id="dicas-redacao"><label for="dicas-redacao"> Dicas de Redação</label></li>
+                    <li><input type="checkbox" id="temas-frequentes"><label for="temas-frequentes"> Temas Frequentes</label></li>
+                    <li><input type="checkbox" id="estrutura-redacao"><label for="estrutura-redacao"> Estrutura da Redação</label></li>
+                    <li><input type="checkbox" id="argumentacao"><label for="argumentacao"> Argumentação</label></li>
+                    <li><input type="checkbox" id="coesao-coerencia"><label for="coesao-coerencia"> Coesão e Coerência</label></li>
+                    <li><input type="checkbox" id="normas-abnt"><label for="normas-abnt"> Normas da ABNT</label></li>
+                    <li><input type="checkbox" id="erros-comuns"><label for="erros-comuns"> Erros Comuns</label></li>
+                    <li><input type="checkbox" id="planejamento-texto"><label for="planejamento-texto"> Planejamento do Texto</label></li>
+                    <li><input type="checkbox" id="introducao-conclusao"><label for="introducao-conclusao"> Introdução e Conclusão</label></li>
+                    <li><input type="checkbox" id="revisao-edicao"><label for="revisao-edicao"> Revisão e Edição</label></li>
                 </ul>
             </section>
         </div>

@@ -11,12 +11,15 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    border-bottom: solid 3px #fec200;
 }
+
+/* Estilos restantes aqui */
 
 .logo-container {
     display: flex;
     align-items: center;
-    padding-left: 100px;
 }
 
 .logo {
@@ -25,10 +28,18 @@ header {
     margin-right: 10px;
 }
 
-h1 {
-    margin: 0;
-    color: #e4980c;
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
     font-size: 1.5em;
+    cursor: pointer;
 }
 
 nav ul {
@@ -69,7 +80,7 @@ section {
     display: flex;
     flex-direction: column;
     border-radius: 8px;
-    border: solid 3px#161a50;
+    border: solid 3px #fec200;
 }
 
 .descricao {
@@ -90,13 +101,63 @@ ul {
 
 ul li {
     margin: 0.5em 0;
+    display: flex;
+    align-items: center;
 }
 
-ul li a {
-    text-decoration: none;
-    color: #000000;
+ul li label {
+    margin-left: 0.5em;
 }
 
-ul li a:hover {
-    text-decoration: underline;
+ul li input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
 }
+
+/* Responsivo */
+@media (max-width: 768px) {
+    header {
+        justify-content: space-between; /* Distribui os itens ao longo do cabeçalho */
+        padding: 2em; /* Adiciona algum espaçamento */
+    }
+
+    .logo-container {
+        margin-right: auto; /* Empurra o logotipo para a extrema esquerda */
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    nav .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        background-color: #161a50;
+        position: absolute;
+        top: 100%;
+        right: 0; /* Posiciona o menu à direita */
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 1em;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+}
+
+
