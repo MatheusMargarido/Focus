@@ -14,6 +14,10 @@ header {
     position: relative;
     border-bottom: solid 3px #fec200;
 }
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fec200;
+}
 
 /* Estilos restantes aqui */
 
@@ -81,7 +85,10 @@ section {
     flex-direction: column;
     border-radius: 8px;
     border: solid 3px #fec200;
+    max-width: 800px; /* Define a largura máxima */
+    margin: 0 auto; /* Centraliza a section */
 }
+
 
 .descricao {
     margin-bottom: 1em;
