@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -12,11 +14,21 @@ header {
     align-items: center;
     justify-content: space-between;
     position: relative;
-    border-bottom: solid 3px #fec200;
+    border-bottom: solid 3px #979dac;
 }
-h1{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #fec200;
+header h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+h1 {
+    color: black;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
 }
 
 /* Estilos restantes aqui */
@@ -32,18 +44,9 @@ h1{
     margin-right: 10px;
 }
 
-nav {
+/* nav {
     display: flex;
     align-items: center;
-}
-
-nav .menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 1.5em;
-    cursor: pointer;
 }
 
 nav ul {
@@ -64,7 +67,24 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #434b99;
+} */
+
+header {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+  }
+
+.header a {
+    padding: 0 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.header a:hover {
+    color: #434b99;
 }
 
 main {
@@ -84,9 +104,10 @@ section {
     display: flex;
     flex-direction: column;
     border-radius: 8px;
-    border: solid 3px #fec200;
+    border: solid 3px #979dac;
     max-width: 800px; /* Define a largura máxima */
     margin: 0 auto; /* Centraliza a section */
+    margin-top: 20px;
 }
 
 
@@ -119,6 +140,10 @@ ul li label {
 ul li input[type="checkbox"] {
     width: 20px;
     height: 20px;
+}
+
+ul li a {
+    text-decoration: none;
 }
 
 /* Responsivo */
