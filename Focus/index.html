@@ -1,59 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Focus - Home</title>
-    <link rel="shortcut icon" href="assets/_a9a8ba86-ca8a-4566-80cf-095a90bfee21-removebg-preview.png"
-        type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/pages/index/index.css">
+    <link rel="shortcut icon" href="assets/images/global/11447066_20424739.svg" type="image/x-icon">
 </head>
-
 <body>
-    <header>
-        <div class="logo-container">
-            <img src="assets/_a9a8ba86-ca8a-4566-80cf-095a90bfee21-removebg-preview.png" alt="Logo FOCUS" class="logo">
-        </div>
-    </header>
 
-    <main>
-        <section>
-            <h1>Como funciona o focus?</h1>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium deserunt natus
-                quod exercitationem nobis error vero quo illum dolorum amet dolor quam itaque laboriosam 
-                doloribus reiciendis consequatur, facilis distinctio ipsa.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium deserunt natus
-                quod exercitationem nobis error vero quo illum dolorum amet dolor quam itaque laboriosam 
-                doloribus reiciendis consequatur, facilis distinctio ipsa.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium deserunt natus
-                quod exercitationem nobis error vero quo illum dolorum amet dolor quam itaque laboriosam 
-                doloribus reiciendis consequatur, facilis distinctio ipsa.
-            </p>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium deserunt natus
-                quod exercitationem nobis error vero quo illum dolorum amet dolor quam itaque laboriosam 
-                doloribus reiciendis consequatur, facilis distinctio ipsa.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium deserunt natus
-                quod exercitationem nobis error vero quo illum dolorum amet dolor quam itaque laboriosam 
-                doloribus reiciendis consequatur, facilis distinctio ipsa.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium deserunt natus
-                quod exercitationem nobis error vero quo illum dolorum amet dolor quam itaque laboriosam 
-                doloribus reiciendis consequatur, facilis distinctio ipsa.
-            </p>
-            <ul class="nav-list">
-                <li><a href="pages/matematica.html">Matemática</a></li>
-                <li><a href="pages/cienciaNatureza.html">Ciências da Natureza</a></li>
-                <li><a href="pages/cienciaHumana.html">Ciências Humanas</a></li>
-                <li><a href="pages/linguagens.html">Linguagens</a></li>
-                <li><a href="pages/redacao.html">Redação</a></li>
-            </ul>
+    <section class="card">
+
+        <section class="image">
+            <h1>Seu aprendizado começa com o FOCUS!</h1>
+            <img class="menino" src="assets/images/pages/index/29808799_7605613.svg" alt="">
         </section>
-    </main>
 
-    
+        <section class="login">
+            <form>
+                <h3>Login</h3>
+                <input type="text" placeholder="Login" id="login">
+                <input type="password" placeholder="Senha" id="senha">
+                <input type="submit" onclick="logar(); return false" class="button">
+            </form>
+        </section>
+
+    </section>
+
+    <script src="assets/js/pages/index/index.js"></script>
+
 </body>
-
 </html>
