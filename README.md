@@ -11,13 +11,6 @@ A ideia é facilitar e nortear o aprendizado dos estudantes , oferecendo um cami
 Contribui para o ODS 4 (Educação de Qualidade), melhorando a qualidade da educação através do fornecimento de um guia de estudos de qualidade. Também contribui para o ODS 10 (Redução das Desigualdades), tornando o
 material de estudo acessível a todos os estudantes, independentemente de sua situação socioeconômica. O objetivo final do projeto é tornar a preparação para o ENEM menos estressante e mais produtiva para todos os estudantes.
 
-
-## Como Usar
-
-1. 
-2. 
-3. 
-
 ## Integrantes do Grupo
 
 1. Victor Sangiorge
